@@ -101,6 +101,7 @@ main {
 main section {
   width: 100%;
   margin: 0 auto;
+  padding: 1em 0;
 }
 
 
@@ -221,5 +222,47 @@ div#polygon-grid .col5 {
 
 /***** FOOTER *****/
 footer {
-  
+  width:85%;
+  margin: 0 auto;
+  padding: 1em 0;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  grid-row: 1;
+  margin: 0;
+  text-align: center;
+}
+
+footer div#about,
+footer div#tickets,
+footer div#social-media {
+  grid-row: 2;
+}
+
+footer div#about p {
+  margin: 0;
+}
+
+footer div#tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div#social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .icons {
+  width: 50px;
+  height: 50px;
 }
