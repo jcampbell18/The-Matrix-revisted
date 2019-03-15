@@ -39,6 +39,8 @@ h3 {
 
 h4 {
   font-size: 1.618em;
+  text-align: center;
+  color: var(--secondary-color);
 }
 
 h5 {
@@ -144,8 +146,15 @@ section#trailer video {
 
 /* Main -> Section: Summary */
 section#summary {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
+  background-image: url("../img/the-matrix-bg.jpg");
+  background-color: #1E392A;
+  background-blend-mode: multiply;
+}
+
+section#summary div.para {
+  margin: 0 15%;
 }
 
 section#summary p {
@@ -157,9 +166,10 @@ section#summary p {
 }
 
 div#screenshots {
+  margin: 0 5%;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 20px;
   align-items: center;
 }
 
@@ -171,9 +181,9 @@ div#screenshots img {
 
 /* Main -> Section: Actors */
 main section#actors {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
-  background: black;
+  background-image: linear-gradient(to bottom, black, var(--secondary-color));
   color: white;
 }
 
