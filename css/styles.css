@@ -7,6 +7,10 @@
 }
 
 
+/***** LAYOUT *****/
+
+
+
 /***** HTML *****/
 html {
   margin: 0;
@@ -15,7 +19,39 @@ html {
 }
 
 body {
-  background: black;
+  
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'IM Fell English SC', serif;
+}
+
+h1 {
+  font-size: 3.272em;
+}
+
+h2 {
+  font-size: 2.618em;
+}
+
+h3 {
+  font-size: 2.023em;
+}
+
+h4 {
+  font-size: 1.618em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+p {
+  font: 1.0em 'Rokkitt', serif;
+}
+
+a, a:link, a:visited, a:hover {
+  text-decoration: none;
 }
 
 
@@ -28,67 +64,54 @@ div#container {
 
 /***** HEADER *****/
 header {
-  /* grid-row: 1; */
   position: relative;
-  height: 300px;
-  background: black url("../img/the-matrix-bg.jpg");
-  clip-path: polygon(
-    0 0,                    /* origin */
-    100% 0,                 /* from origin to x,y */
-    100% 100%,              /* width height */
-    0 calc(100% - 5vw)      /*  */
-  );
 }
 
 header h1 {
-  font-size: 3em;
-  color: white;
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
 /***** NAV *****/
 nav {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  height: 3em;
-  padding: 0;
-  margin: 0;
-  border: 0;
-
-  display: flex;
-  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   align-items: center;
-}
-
-nav {
-  list-style: none;
-}
-
-nav a, a:link, a:hover, a:visited {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
 }
 
 
 /***** MAIN *****/
 main {
-  /* grid-row: 2; */
-  width: 100%;
-  height: auto;
-  /* background-image: linear-gradient(135deg, #777, #111); */
 
 }
 
 main section {
-  background: black;
-  color: white;
+
 }
+
+
+/* Main -> Section: Summary */
+main section#summary {
+
+}
+
+
+/* Main -> Section: Actors */
+main section#actors {
+
+}
+
 
 
 /***** FOOTER *****/
 footer {
-  /* grid-row: 3; */
+  
 }
