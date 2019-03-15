@@ -1,4 +1,2 @@
-// Everything OK?
-console.log('OK');
-
-// Your Awesome Scripts
+// Output Current Year
+$('.currentYear').text( (new Date).getFullYear() );
