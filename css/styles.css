@@ -31,7 +31,9 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 2.618em;
+  color: white;
 }
 
 h3 {
@@ -44,6 +46,7 @@ h4 {
 
 h5 {
   font-size: 1.25em;
+  margin: 0;
 }
 
 p {
@@ -52,6 +55,7 @@ p {
 
 a, a:link, a:visited, a:hover {
   text-decoration: none;
+  color: black;
 }
 
 
@@ -70,6 +74,7 @@ header {
 header h1 {
   display: flex;
   justify-content: flex-start;
+  align-content: center;
 }
 
 
@@ -90,23 +95,126 @@ nav {
 
 /***** MAIN *****/
 main {
-
+  background: black;
 }
 
 main section {
+  width: 100%;
+  margin: 0 auto;
+}
 
+
+/* Main -> Section: Trailer */
+section#trailer {
+  width: 100%;
+  background: url("../img/trinity.png") no-repeat;
+  background-size: cover;
+}
+
+section#trailer div#trailer-wrapper {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  justify-items: center;
+  align-items: end;
+}
+
+section#trailer h2 {
+  margin: 0;
+  grid-row: 1;
+}
+
+section#trailer video {
+  margin-bottom: 0.5em;
+  border: 1px solid yellow;
+  grid-row: 2;
 }
 
 
 /* Main -> Section: Summary */
-main section#summary {
+section#summary {
+  width: 85%;
+  margin: 0 auto;
+}
 
+section#summary p {
+  color: white;
+}
+
+div#screenshots {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+div#screenshots img {
+  width: 100%;
+  height: auto;
 }
 
 
 /* Main -> Section: Actors */
 main section#actors {
+  width: 85%;
+  margin: 0 auto;
+  background: black;
+  color: white;
+}
 
+main section#actors svg {
+  fill: #666666;
+  transform: scale(1.0);
+}
+
+div#polygon-grid {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+div#polygon-grid img {
+  width: 360px;
+  height: 466px;
+}
+
+.svg-polygon-mask {
+  -webkit-mask-box-image: url("../img/Polygon.svg");
+  mask: url("../img/Polygon.svg");
+}
+
+div#polygon-grid .row1 {
+  grid-row: 1 / span 3;
+}
+
+div#polygon-grid .row2 {
+  grid-row: 3 / span 3;
+}
+
+div#polygon-grid .row3{
+  grid-row: 5 / span 3;
+}
+
+div#polygon-grid .col1 {
+  grid-column: 1 / span 2;
+}
+
+div#polygon-grid .col2 {
+  grid-column: 2 / span 2;
+}
+
+div#polygon-grid .col3 {
+  grid-column: 3 / span 2;
+}
+
+div#polygon-grid .col4 {
+  grid-column: 4 / span 2;
+}
+
+div#polygon-grid .col5 {
+  grid-column: 5 / span 2;
 }
 
 
