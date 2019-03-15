@@ -7,19 +7,12 @@
 }
 
 
-/***** LAYOUT *****/
-
-
 
 /***** HTML *****/
 html {
   margin: 0;
   border: 0;
   padding: 0;
-}
-
-body {
-  
 }
 
 h1, h2, h3, h4, h5 {
@@ -33,7 +26,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2.618em;
-  color: white;
+  color: var(--tertiary-color);
 }
 
 h3 {
@@ -63,33 +56,44 @@ a, a:link, a:visited, a:hover {
 div#container {
   width: 95%;
   margin: 0 auto;
+  background: black;
 }
 
 
 /***** HEADER *****/
 header {
-  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background: black;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 header h1 {
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
+  padding-left: 0.8em;
 }
 
 
 /***** NAV *****/
 nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 50%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+nav p {
+  font-weight: bold;
 }
 
 
@@ -109,7 +113,7 @@ main section {
 section#trailer {
   width: 100%;
   background: url("../img/trinity.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 section#trailer div#trailer-wrapper {
@@ -125,8 +129,10 @@ section#trailer h2 {
 }
 
 section#trailer video {
+  width: 85%;
   margin-bottom: 0.5em;
-  border: 1px solid yellow;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
   grid-row: 2;
 }
 
@@ -139,6 +145,9 @@ section#summary {
 
 section#summary p {
   color: white;
+  padding: 0.6em 0.6em;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
 }
 
 div#screenshots {
@@ -222,9 +231,10 @@ div#polygon-grid .col5 {
 
 /***** FOOTER *****/
 footer {
-  width:85%;
+  width: 85%;
   margin: 0 auto;
   padding: 1em 0;
+  background: black;
 
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -238,6 +248,7 @@ footer h3 {
   grid-row: 1;
   margin: 0;
   text-align: center;
+  color: var(--tertiary-color);
 }
 
 footer div#about,
@@ -248,6 +259,8 @@ footer div#social-media {
 
 footer div#about p {
   margin: 0;
+  color: var(--quaternary-color);
+  text-align: center;
 }
 
 footer div#tickets {
@@ -266,3 +279,5 @@ footer .icons {
   width: 50px;
   height: 50px;
 }
+
+
