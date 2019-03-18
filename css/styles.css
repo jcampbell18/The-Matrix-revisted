@@ -9,28 +9,31 @@
 
 
 /***** HTML *****/
-html {
+* {
   margin: 0;
   border: 0;
   padding: 0;
 }
 
 body {
+  width: 100%;
+  margin: 0 auto;
   background: black;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'IM Fell English SC', serif;
+h2, h3, h4, h5, p {
+  font-family: 'Lora', serif;
 }
 
 h1 {
-  font-size: 3.272em;
+  font: 3.272em 'IM Fell English SC', serif;
 }
 
 h2 {
   text-align: center;
   font-size: 2.618em;
   color: var(--tertiary-color);
+  letter-spacing: 0.0625em;
 }
 
 h3 {
@@ -49,8 +52,7 @@ h5 {
 }
 
 p {
-  /* font: 1.0em 'Rokkitt', serif; */
-  font: 1.0em 'Lora', serif;
+  font-size: 1.0em;
 }
 
 a, a:link, a:visited, a:hover {
@@ -61,7 +63,7 @@ a, a:link, a:visited, a:hover {
 
 /***** CONTAINER *****/
 div#container {
-  width: 95%;
+  max-width: 95%;
   margin: 0 auto;
   background: black;
 }
@@ -96,7 +98,7 @@ nav a:link,
 nav a:visited {
   color: var(--primary-color);
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 nav p {
@@ -106,6 +108,8 @@ nav p {
 
 /***** MAIN *****/
 main {
+  width: 100%;
+  margin: 0 auto;
   background: black;
 }
 
@@ -119,8 +123,10 @@ main section {
 /* Main -> Section: Trailer */
 section#trailer {
   width: 100%;
+  margin: 0 auto;
   background: url("../img/trinity.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 section#trailer div#trailer-wrapper {
@@ -135,12 +141,17 @@ section#trailer h2 {
   grid-row: 1;
 }
 
-section#trailer video {
-  width: 85%;
-  margin-bottom: 0.5em;
+main section#trailer video {
+  max-width: 640px;
+  min-width: 385px;
+  height: 360px;
+  margin-bottom: 0.5em auto;
+  grid-row: 2;
+}
+
+section#trailer .mejs__container {
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
-  grid-row: 2;
 }
 
 
@@ -163,6 +174,7 @@ section#summary p {
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
   line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 div#screenshots {
@@ -183,7 +195,7 @@ div#screenshots img {
 main section#actors {
   width: 100%;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, black, var(--secondary-color));
+  background-image: linear-gradient(black, var(--secondary-color), black);
   color: white;
 }
 
@@ -255,7 +267,7 @@ footer {
   align-items: center;
 }
 
-footer h3 {
+footer h4 {
   grid-row: 1;
   margin: 0;
   text-align: center;
