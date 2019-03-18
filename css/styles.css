@@ -303,7 +303,7 @@ footer div#tickets {
 
 footer div#social-media {
   display: flex;
-  text-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
