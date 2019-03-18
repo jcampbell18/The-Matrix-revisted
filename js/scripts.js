@@ -12,7 +12,7 @@ if (screenWidth < 640) {
 }
 
 console.log('Screen width: ' + screenWidth);
-console.log('Video wxh: ' + videoWidth + ' x ' + videoHeight);
+console.log('Video (w x h): ' + videoWidth + ' x ' + videoHeight);
 
 /* Media Element Player Plugin
 * Reference: https://github.com/mediaelement/mediaelement/blob/master/docs/usage.md
