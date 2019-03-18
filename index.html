@@ -21,13 +21,13 @@
 <!-- Normalize CSS via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
 <!-- Required Plugin Stylesheets -->    
-    
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css"/>
 <!-- My Awesome Styling -->
     <link rel="stylesheet" href="css/styles.css"/>
 
 <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC"/>
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora"/>
 
 </head>
 
@@ -57,9 +57,9 @@
             <section id="trailer">
                 <div id="trailer-wrapper">
                     <h2>Trailer</h2>
-                    <video controls>
-                            <source type="video/mp4" src="video/trailer.mp4"/>
-                            <source type="video/webm" src="video/trailer.webm"/>
+                    <video id="mediaplayer" >
+                        <source type="video/mp4" src="video/trailer.mp4"/>
+                        <source type="video/webm" src="video/trailer.webm"/>
                     </video>
                 </div>
             </section>
@@ -89,14 +89,14 @@
 <!-- Main: Actors -->
             <section id="actors">
                 <h2>Actors</h2>
-                <div id="polygon-grid">
+                <!-- <div id="polygon-grid">
                     <img src="img/Keanu Reeves.jpg" alt="" class="svg-polygon-mask row1 col1"/>
                     <img src="img/Laurence Fishburne.jpg" alt="" class="svg-polygon-mask row1 col3"/>
                     <img src="img/Carrie-Anne Moss.jpg" alt="" class="svg-polygon-mask row1 col5"/>
                     <img src="img/Hugo Weaving.jpg" alt="" class="svg-polygon-mask row2 col2"/>
                     <img src="img/Gloria Foster.jpg" alt="" class="svg-polygon-mask row2 col4"/>
                     <img src="img/Joe Pantoliano.jpg" alt="" class="svg-polygon-mask row3 col3"/>
-                </div>
+                </div> -->
             </section>
 
         </main>
@@ -105,7 +105,7 @@
         <footer>
 
 <!-- Footer: About-->
-            <h3>About</h3>
+            <h4 id="details">About</h4>
             <div id="about">
                 <p>
                     The Matrix is a rated [R], Science-Fiction film that was produced by Warner Bros.,
@@ -115,7 +115,7 @@
             </div>
 
 <!-- Footer: Tickets -->            
-            <h3>Tickets</h3>
+            <h4>Tickets</h4>
             <div id="tickets">
                 <a href="https://www.fandango.com/" target="_blank">
                     <img src="img/fandango_logo.png" alt="Fandango" title="Fandango" class="icons"/>
@@ -123,7 +123,7 @@
             </div>
 
 <!-- Footer: Social Media & Other Links -->
-            <h3>Social Media</h3>
+            <h4>Social Media</h4>
             <div id="social-media">
                 <a href="https://www.facebook.com/warnerbrosent" target="_blank" class="">
                     <img src="img/facebook_logo.png" alt="Facebook" title="Facebook" class="icons"/>
@@ -148,7 +148,7 @@
     <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Plugins(s) -->
-    
+    <script src="js/mediaelement-and-player.min.js"></script>
     <!-- My Scripts -->
     <script src="js/scripts.js"></script>
 </body>
