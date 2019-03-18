@@ -81,7 +81,7 @@ header {
 }
 
 header h1 {
-  padding-left: 0.8em;
+  padding: 0 2em 0 0.8em;
 }
 
 
@@ -91,6 +91,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-right: 0.8em;
 }
 
 nav a,
@@ -145,7 +146,7 @@ main section#trailer video {
   max-width: 640px;
   min-width: 385px;
   height: 360px;
-  margin-bottom: 0.5em auto;
+  margin: 0.5em auto;
   grid-row: 2;
 }
 
