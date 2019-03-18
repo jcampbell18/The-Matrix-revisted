@@ -1,12 +1,13 @@
-console.log('OK');
-
+/*
+ * determining screen size, and adjusting video (responsive)
+ */
 var screenWidth = $(window).width();
 var videoWidth = 640;
 var videoHeight = 360;
 var aspectRatio = videoWidth/videoHeight;
 
 if (screenWidth < 640) {
-    videoWidth = screenWidth * .99;
+    videoWidth = screenWidth * .93;
     videoHeight = videoWidth / aspectRatio;
 }
 
