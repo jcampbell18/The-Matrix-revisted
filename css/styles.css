@@ -10,7 +10,6 @@
 
 /***** HTML *****/
 * {
-  box-sizing: border-box;
   margin: 0;
   border: 0;
   padding: 0;
@@ -324,4 +323,14 @@ div#copyright {
 
 div#copyright p {
   padding: 1em 0;
+}
+
+
+/***** @MEDIA *****/
+@media (max-width: 600px) {
+
+  footer div#social-media {
+    flex-direction: column;
+  }
+
 }
