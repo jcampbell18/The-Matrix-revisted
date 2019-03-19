@@ -14,12 +14,13 @@ $('header').css();
 /* Polygon grid 
  * TODO:    on hover, display actor's name
  *          lightbox?
- *          link to imdb?
+ *          link to imdb?f
  */
 
  /* LetteringJS
   * TODO:   apply somewhere...
   */ 
+
 
 /*
  * determining screen size, and adjusting video (responsive)
@@ -34,9 +35,10 @@ if (screenWidth < 640) {
     videoHeight = videoWidth / aspectRatio;
 }
 
-/* Diagnostics */
-console.log('Screen width: ' + screenWidth);
-console.log('Video (w x h): ' + videoWidth + ' x ' + videoHeight);
+$('video').css({
+    'width': videoWidth,
+    'height': videoHeight
+})
 
 /* Media Element Player Plugin
 * Reference: https://github.com/mediaelement/mediaelement/blob/master/docs/usage.md
