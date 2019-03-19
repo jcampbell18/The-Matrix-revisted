@@ -17,6 +17,10 @@ $('header').css();
  *          link to imdb?
  */
 
+ /* LetteringJS
+  * TODO:   apply somewhere...
+  */ 
+
 /*
  * determining screen size, and adjusting video (responsive)
  */
