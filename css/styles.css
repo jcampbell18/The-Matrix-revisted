@@ -114,6 +114,10 @@ main {
   background: black;
 }
 
+main h4 {
+  margin-top: 1.0em;
+}
+
 main section {
   width: 100%;
   margin: 0 auto;
@@ -276,15 +280,16 @@ footer {
 }
 
 footer h4 {
-  grid-row: 1;
   margin: 0;
   text-align: center;
   color: var(--tertiary-color);
 }
 
-footer div#about,
-footer div#tickets,
-footer div#social-media {
+footer h4 .row1{
+  grid-row: 1;
+}
+
+footer div .row2 {
   grid-row: 2;
 }
 
@@ -303,7 +308,7 @@ footer div#tickets {
 footer div#social-media {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -329,8 +334,55 @@ div#copyright p {
 /***** @MEDIA *****/
 @media (max-width: 600px) {
 
-  footer div#social-media {
-    flex-direction: column;
+  footer {
+    margin-top: 1em;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.0em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer h4.m-row1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  footer div.m-row2 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  footer h4.m-row3 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  
+  footer div.m-row4 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  footer h4.m-row5 {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  footer div.m-row6 {
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  footer div#tickets-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div#social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
