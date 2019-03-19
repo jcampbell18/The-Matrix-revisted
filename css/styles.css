@@ -267,7 +267,7 @@ div#polygon-grid .col5 {
 /***** FOOTER *****/
 footer {
   width: 85%;
-  margin: 0 auto;
+  margin: 1.0em auto;
   padding: 1em 0;
   background: black;
 
@@ -275,7 +275,7 @@ footer {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -285,12 +285,20 @@ footer h4 {
   color: var(--tertiary-color);
 }
 
-footer h4 .row1{
+footer h4.row1{
   grid-row: 1;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-footer div .row2 {
+footer div.row2 {
   grid-row: 2;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 footer div#about p {
