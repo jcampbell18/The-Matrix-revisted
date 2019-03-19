@@ -135,6 +135,8 @@ section#trailer {
 }
 
 section#trailer div#trailer-wrapper {
+  width: 100%;
+
   display: grid;
   grid-template-rows: 2fr 2fr;
   justify-items: center;
@@ -147,16 +149,15 @@ section#trailer h2 {
 }
 
 main section#trailer video {
-  max-width: 640px;
-  min-width: 385px;
+  width: 640px;
   height: 360px;
   margin: 0.5em auto;
   grid-row: 2;
 }
 
 section#trailer .mejs__container {
-  border: 2px solid var(--secondary-color);
-  border-radius: 5px;
+  /* border: 2px solid var(--secondary-color);
+  border-radius: 5px; */
 }
 
 
