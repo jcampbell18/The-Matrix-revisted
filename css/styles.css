@@ -91,7 +91,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-right: 0.8em;
+  padding-right: 1.2em;
 }
 
 nav a,
@@ -183,15 +183,15 @@ section#summary p {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-div#screenshots {
-  margin: 0 5%;
+div.screenshots {
+  margin: 2% 5%;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-column-gap: 20px;
   align-items: center;
 }
 
-div#screenshots img {
+div.screenshots img {
   width: 100%;
   height: auto;
 }
