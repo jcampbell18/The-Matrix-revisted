@@ -10,6 +10,18 @@ $('header').css();
  * TODO:   lightbox
  *         random images?
  */ 
+// lightGallery
+$('#lightgallery').lightGallery({
+    thumbnail: false,
+    fullScreen: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    zoom: false,
+    download: false,
+    mode: 'lg-zoom-in-big',
+    scale: 1
+});
+
 
 /* Polygon grid 
  * TODO:    on hover, display actor's name
