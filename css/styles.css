@@ -194,6 +194,7 @@ div.screenshots {
 div.screenshots img {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 
@@ -263,6 +264,28 @@ div#polygon-grid .col5 {
   grid-column: 5 / span 2;
 }
 
+div#polygon-grid .on-row-3 {
+  grid-row: 3;
+  z-index: 10;
+}
+
+div#polygon-grid .on-row-5 {
+  grid-row: 5;
+  z-index: 11;
+}
+
+div#polygon-grid .on-row-7 {
+  grid-row: 7;
+  z-index: 12;
+}
+
+.shadow {
+  color: var(--primary-color);
+  text-shadow:  2px  2px 3px black,
+                2px -2px 3px black,
+               -2px  2px 3px black,
+               -2px -2px 3px black;
+}
 
 
 /***** FOOTER *****/
