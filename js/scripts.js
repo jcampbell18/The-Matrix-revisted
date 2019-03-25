@@ -1,12 +1,3 @@
-/* Navigation */
-/* TODO:    on hover, activate matrix gif
- *          on mouse press, deactivate matrix gif
-
-$('header').
-$('header').css();
-*/
-
-
 /* Screenshots (random images without duplication)
  * written by Jason Campbell
  */
@@ -57,8 +48,9 @@ $('#lightgallery').lightGallery({
 
 
  /* LetteringJS
-  * TODO:   apply somewhere...
+  * Reference: http://letteringjs.com/
   */ 
+$('main>h4').lettering('words');
 
 
 /* determining screen size, and adjusting video (responsive)
