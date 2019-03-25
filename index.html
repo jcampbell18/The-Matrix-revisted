@@ -21,10 +21,12 @@
 
 <!-- Normalize CSS via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
 <!-- Required Plugin Stylesheets -->    
     <link rel="stylesheet" href="css/mediaelementplayer.min.css"/>
     <link rel="stylesheet" href="css/lightgallery.min.css"/>
     <link rel="stylesheet" href="css/lg-transitions.min.css"/>
+    
 <!-- My Awesome Styling -->
     <link rel="stylesheet" href="css/styles.css"/>
 
@@ -83,9 +85,15 @@
                     </p>
                 </div>
                 <div id="lightgallery" class="screenshots">
-                    <a href="img/img1.jpg"><img src="img/img1.jpg" alt="Neo dodging bullets, fired by the agents"/></a>
-                    <a href="img/img2.jpg"><img src="img/img2.jpg" alt="You take the blue pill, the story ends. You wake up in your bed and believe whatever you want to. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes."/></a>
-                    <a href="img/img3.jpg"><img src="img/img3.jpg" alt="Neo stopping the bullets, fired by the agents"/></a>
+                    <a id="screenshot-link1" href="img/img1.jpg">
+                        <img id="screenshot-img1" src="img/img1.jpg" alt="The Matrix screenshot 1"/>       
+                    </a>
+                    <a id="screenshot-link2" href="img/img2.jpg">
+                        <img id="screenshot-img2" src="img/img2.jpg" alt="The Matrix screenshot 2"/>
+                    </a>
+                    <a id="screenshot-link3" href="img/img3.jpg">
+                        <img id="screenshot-img3" src="img/img3.jpg" alt="The Matrix screenshot 3"/>
+                    </a>
                 </div>
             </section>
 
@@ -93,12 +101,32 @@
             <section id="actors">
                 <h2>Actors</h2>
                 <div id="polygon-grid">
-                    <img src="img/Keanu Reeves.jpg" alt="" class="svg-polygon-mask row1 col1"/>
-                    <img src="img/Laurence Fishburne.jpg" alt="" class="svg-polygon-mask row1 col3"/>
-                    <img src="img/Carrie-Anne Moss.jpg" alt="" class="svg-polygon-mask row1 col5"/>
-                    <img src="img/Hugo Weaving.jpg" alt="" class="svg-polygon-mask row2 col2"/>
-                    <img src="img/Gloria Foster.jpg" alt="" class="svg-polygon-mask row2 col4"/>
-                    <img src="img/Joe Pantoliano.jpg" alt="" class="svg-polygon-mask row3 col3"/>
+                    <img id="hex1" src="img/Keanu Reeves.jpg" alt="Keanu Reeves" class="svg-polygon-mask row1 col1"/>
+                    <img id="hex2" src="img/Laurence Fishburne.jpg" alt="Laurence Fishburne" class="svg-polygon-mask row1 col3"/>
+                    <img id="hex3" src="img/Carrie-Anne Moss.jpg" alt="Carrie-Anne Moss" class="svg-polygon-mask row1 col5"/>
+                    <img id="hex4" src="img/Hugo Weaving.jpg" alt="Hugo Weaving" class="svg-polygon-mask row2 col2"/>
+                    <img id="hex5" src="img/Gloria Foster.jpg" alt="Gloria Foster" class="svg-polygon-mask row2 col4"/>
+                    <img id="hex6" src="img/Joe Pantoliano.jpg" alt="Joe Pantoliano" class="svg-polygon-mask row3 col3"/>
+                    
+                    <div class="on-row-3 col1 shadow">
+                        <h5>Keanu Reeves</h5>
+                    </div>
+                    <div class="on-row-3 col3 shadow">
+                        <h5>Laurence Fishburne</h5>
+                    </div>
+                    <div class="on-row-3 col5 shadow">
+                        <h5>Carrie-Anne Moss</h5>
+                    </div>
+                    <div class="on-row-5 col2 shadow">
+                        <h5>Hugo Weaving</h5>
+                    </div>
+                    <div class="on-row-5 col4 shadow">
+                        <h5>Gloria Foster</h5>
+                    </div>
+                    <div class="on-row-7 col3 shadow">
+                        <h5>Joe Pantoliano</h5>
+                    </div>
+
                 </div>
             </section>
 
@@ -155,7 +183,6 @@
     <script src="js/mediaelement-and-player.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
     <!-- LightGallery Plugin(s)-->
-    <script src="js/lightgallery.min.js"></script>
     <script src="js/lg-fullscreen.min.js"></script>
     <!-- My Scripts -->
     <script src="js/scripts.js"></script>
