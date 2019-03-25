@@ -6,11 +6,44 @@ $('header').
 $('header').css();
 */
 
-/* Screenshots
- * TODO:   lightbox
- *         random images?
- */ 
-// lightGallery
+
+/* Screenshots (random images without duplication)
+ * written by Jason Campbell
+ */
+var limit = 12;
+var imagesShown = 3;
+var images = [imagesShown.length];
+var imagePath = 'img/img';
+
+for (let ix = 0; ix < imagesShown; ix++) {
+
+    var rand = Math.floor(Math.random() * limit);
+    let jx = ix - 1;
+
+    while (jx >= 0) {
+
+        while (rand == images[jx]) {
+
+            rand = Math.floor(Math.random() * limit);
+            jx = ix;
+
+        }// end inner while loop
+
+        jx--;
+
+    }// end outer while loop
+
+    images[ix] = rand;
+
+    $('#screenshot-link' + (ix+1) ).attr('href', imagePath + images[ix] + '.jpg');
+    $('#screenshot-img'  + (ix+1) ).attr( 'src', imagePath + images[ix] + '.jpg');
+
+}// end for loop
+
+
+/* LightGallery
+ * Reference: https://sachinchoolur.github.io/lightGallery/
+ */
 $('#lightgallery').lightGallery({
     thumbnail: false,
     fullScreen: true,
@@ -23,19 +56,13 @@ $('#lightgallery').lightGallery({
 });
 
 
-/* Polygon grid 
- * TODO:    on hover, display actor's name
- *          lightbox?
- *          link to imdb?f
- */
-
  /* LetteringJS
   * TODO:   apply somewhere...
   */ 
 
 
-/*
- * determining screen size, and adjusting video (responsive)
+/* determining screen size, and adjusting video (responsive)
+ * written by Jason Campbell
  */
 var screenWidth = $(window).width();        
 var videoWidth = 640;                       // max width
@@ -53,8 +80,8 @@ $('video').css({
 })
 
 /* Media Element Player Plugin
-* Reference: https://github.com/mediaelement/mediaelement/blob/master/docs/usage.md
-*/
+ * Reference: https://github.com/mediaelement/mediaelement/blob/master/docs/usage.md
+ */
 $('#mediaplayer').mediaelementplayer({
 
     defaultVideoWidth: videoWidth,
